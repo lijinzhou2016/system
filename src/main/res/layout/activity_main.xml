@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xzit.zyy.system.MainActivity">
+
+   <!--首先定义顶部标题栏的样式，48dp的LinearLayout中间加上一个TextView作为标题！ -->
+
+    <!--接着定义一个大小为56dp的LinerLayout对其底部，在这个里面加入四个TextView，比例1:1:1:1，
+并且设置相关属性，接着在这个LinearLayout上加一条线段！-->
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/div_white"
+        android:layout_above="@+id/ly_tab_bar"></View>
+    <LinearLayout
+        android:id="@+id/ly_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txt_information"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tab_menu_bg"
+                android:drawableTop="@drawable/tab_menu_information"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/txt_information"
+                android:drawablePadding="3dp"
+                android:textColor="@drawable/tab_menu_text"
+                android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/txt_course"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/txt_course"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/tab_menu_course"
+            android:gravity="center"
+            android:padding="5dp"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/txt_question_bank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/txt_question_bank"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/tab_menu_questionbank"
+            android:gravity="center"
+            android:padding="5dp"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/txt_my"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/tab_menu_my"
+            android:gravity="center"
+            android:padding="5dp"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+    <!--最后以标题栏和底部导航栏为边界，写一个FrameLayout，宽高match_parent，用做Fragment的容器！-->
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ly_tab_bar"
+        android:layout_below="@+id/ly_top_bar"
+        ></FrameLayout>
+
+</RelativeLayout>

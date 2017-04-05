@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">system</string>
+    <string name="activity_login_title_name">登录</string>
+    <string name="activity_login_title_register">立即注册</string>
+    <string name="txt_information">资讯</string>
+    <string name="txt_course">课程</string>
+    <string name="txt_question_bank">题库</string>
+    <string name="txt_my">我的</string>
+    <string name="login_register">登录/注册</string>
+</resources>

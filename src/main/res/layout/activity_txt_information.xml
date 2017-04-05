@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_questionbank">
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_red">
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="教师资格"/>
+    </RelativeLayout>
+
+
+<AdapterViewFlipper
+    android:id="@+id/information_cycle_viewpager"
+    android:layout_below="@+id/ly_top_bar"
+    android:flipInterval="3000"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+</AdapterViewFlipper>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/information_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/information_news"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="实时资讯"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/information_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/information_time"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="考试日历"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/information_question"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/information_question"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="常见问题"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/information_leader"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/information_leader"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="新手指南"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/information_key"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/information_key"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="核心考点"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/information_result"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/information_result"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="成绩查询"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

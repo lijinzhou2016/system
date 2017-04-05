@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="xzit.zyy.system.Course_WordActivity"
+    android:background="@color/bg_questionbank">
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_red">
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="生词本"/>
+    </RelativeLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:padding="10dp">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="match_parent"
+             android:textSize="15sp"
+             android:text="单词："
+
+             android:textColor="#000"/>
+         <TextView
+             android:id="@+id/word"
+             android:singleLine="true"
+             android:textColorHint="@color/text_gray"
+             android:textColor="#000"
+             android:layout_width="0dp"
+             android:layout_weight="5"
+             android:layout_height="match_parent"/>
+     </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text="解析："
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/detail"
+            android:textColor="#000"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/word_previous"
+            android:text="前一条"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:background="@drawable/login_shape"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btn_word_to_edit"
+            android:text="编辑单词"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:background="@drawable/login_shape"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="后一条"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/word_next"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:background="@drawable/login_shape"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:text="退出"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/word_exit"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:background="@drawable/login_shape"
+            />
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

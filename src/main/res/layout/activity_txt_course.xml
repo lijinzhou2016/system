@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_questionbank">
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_red">
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="教师资格"/>
+    </RelativeLayout>
+
+        <AdapterViewFlipper
+            android:id="@+id/course_cycle_viewpager"
+            android:layout_below="@+id/ly_top_bar"
+            android:flipInterval="3000"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+        </AdapterViewFlipper>
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="56dp"
+           android:background="@color/bg_white"
+           android:orientation="horizontal">
+           <TextView
+               android:id="@+id/course_bookshop"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@drawable/tab_menu_bg"
+               android:drawableTop="@drawable/course_bookshop"
+               android:gravity="center"
+               android:padding="5dp"
+               android:text="词典"
+               android:drawablePadding="3dp"
+               android:textColor="@drawable/tab_menu_text"
+               android:textSize="12sp"/>
+           <TextView
+               android:id="@+id/course_listener"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:background="@drawable/tab_menu_bg"
+               android:drawableTop="@drawable/course_listener"
+               android:gravity="center"
+               android:padding="5dp"
+               android:text="听力"
+               android:drawablePadding="3dp"
+               android:textColor="@drawable/tab_menu_text"
+               android:textSize="12sp"/>
+           <TextView
+               android:id="@+id/course_word"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:background="@drawable/tab_menu_bg"
+               android:drawableTop="@drawable/course_word"
+               android:gravity="center"
+               android:padding="5dp"
+               android:text="生词本"
+               android:drawablePadding="3dp"
+               android:textColor="@drawable/tab_menu_text"
+               android:textSize="12sp"/>
+
+
+       </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/course_read"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/course_read"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="悦读"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/course_course"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/course_course"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="精品课"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/course_member"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/course_member"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="会员中心"
+            android:drawablePadding="3dp"
+            android:textColor="@drawable/tab_menu_text"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

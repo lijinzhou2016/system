@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_questionbank"
+    tools:context="xzit.zyy.system.LoginActivity">
+        <!--首先定义顶部标题栏的样式，48dp的LinearLayout中间加上一个TextView作为标题！ -->
+        <RelativeLayout
+            android:id="@+id/login_rl"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/bg_red"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_login_title_name"/>
+            <TextView
+                android:id="@+id/login_xml_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:text="@string/activity_login_title_register"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                />
+
+        </RelativeLayout>
+    <!--接着定义一个大小为40dp的LinerLayout对，在这个里面加入2个TextView，比例1:1，
+并且设置相关属性-->
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/login_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_account_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="手机号/邮箱"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:textColorHint="#C8C8C8"
+            />
+
+        <EditText
+            android:id="@+id/login_account_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:textColor="#000"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:textColorHint="#C8C8C8"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/text_white"
+                android:textSize="20sp"
+                android:background="@drawable/login_shape"/>
+            <TextView
+                android:id="@+id/login_find_psd"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="忘记密码？"
+                android:textColor="#C8C8C8"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

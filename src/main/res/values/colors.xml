@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_red">#E13B29</color>
+    <color name="text_gray">#919496</color>
+    <color name="text_white">#fff</color>
+    <color name="bg_white">#fff</color>
+    <color name="bg_red">#e41b39</color>
+    <color name="div_white">#fff</color>
+    <color name="login_text_color">#000</color>
+    <color name="login_bg">#808069</color>
+    <color name="bg_tab">#FAFAFA</color>
+    <color name="bg_questionbank">#F5F5F5</color>
+    <color name="text_purple">#4B0082</color>
+    <color name="practice_test_no_text">#000</color>
+    <color name="practice_test_content_text">#919496</color>
+</resources>
+

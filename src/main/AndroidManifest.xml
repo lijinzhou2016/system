@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xzit.zyy.system">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="xzit.zyy.dbDao.ApplicationUser"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <!-- 隐藏手机自带顶部导航栏:android:theme="@style/Theme.AppCompat.NoActionBar" -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".AnswerSystem" />
+        <activity android:name=".Login_RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ClockActivity" />
+        <activity android:name=".Course_WordActivity" />
+        <activity android:name=".Course_BookShopActivity" />
+        <activity android:name=".AlarmActivity" />
+        <activity android:name=".WordManageActivity" />
+        <activity android:name=".InformationNewsActivity" />
+        <activity android:name=".InformationTimeActivity" />
+        <activity android:name=".InformationLeaderActivity" />
+        <activity android:name=".InformationQuestionActivity" />
+        <activity android:name=".InformationKeyActivity" />
+        <activity android:name=".InformationResultActivity" />
+        <activity android:name=".MyAccount" />
+        <activity android:name=".MyAlertPwd" />
+        <activity android:name=".QuestionBankPracticeActivity" />
+        <activity android:name=".QuestionBankTrueActivity" />
+        <activity android:name=".QuestionBankSimulateActivity" />
+        <activity android:name=".QuestionBankEasyActivity" />
+        <activity android:name=".QuestionBankAnalyzeActivity" />
+        <activity android:name=".QuestionBankOfflineActivity" />
+        <activity android:name=".QuestionBankErrortatalActivity" />
+        <activity android:name=".QuestionBankRestoreActivity" />
+        <activity android:name=".QuestionBankNoteanalyseActivity" />
+        <activity android:name=".QuestionBankItems"></activity>
+    </application>
+
+</manifest>

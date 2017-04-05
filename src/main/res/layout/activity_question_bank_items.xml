@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_questionbank"
+    tools:context="xzit.zyy.system.QuestionBankItems">
+    <!--底部设计 start-->
+    <LinearLayout
+        android:id="@+id/questionbankitems_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#288df5" >
+        <!--上一题-->
+    <LinearLayout
+        android:id="@+id/activity_prepare_test_upLayout"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一题" />
+  </LinearLayout>
+        <!--上一题end-->
+        <!--显示题量-->
+        <LinearLayout
+            android:id="@+id/activity_prepare_test_totalLayout"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon" />
+            <TextView
+                android:id="@+id/activity_prepare_test_totalTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4/32" />
+        </LinearLayout>
+        <!--显示题量end-->
+
+        <!--我的错题-->
+        <LinearLayout
+            android:id="@+id/activity_prepare_test_errorLayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/menu_bottom_errorIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/question_back_txt_earn_one" />
+            <TextView
+                android:id="@+id/menu_bottom_errorTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的错题" />
+        </LinearLayout>
+        <!--我的错题end-->
+
+        <!--下一题-->
+        <LinearLayout
+            android:id="@+id/activity_prepare_test_nextLayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/menu_bottom_nextIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+            <TextView
+                android:id="@+id/menu_bottom_nextTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下一题" />
+        </LinearLayout>
+        <!--下一题end-->
+
+    </LinearLayout>
+    <!--底部设计end-->
+    <!--题目主体设计-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/questionbankitems_bottom_layout"
+        android:layout_margin="10dp"
+        android:background="@color/bg_white">
+        <!--题目题号和内容-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"></LinearLayout>
+
+            
+        </LinearLayout>
+            <TextView
+                android:id="@+id/activity_prepare_test_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/practice_test_content_text"
+                android:textSize="16sp" />
+            <!--题目内容结束-->
+
+        <!--题目题号和内容end-->
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
